@@ -1,0 +1,12 @@
+name: movie_explorer
+description: Responsive Movie Explorer web app built with Flutter.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+flutter:
+  uses-material-design: true
