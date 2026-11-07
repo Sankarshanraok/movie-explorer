@@ -15,16 +15,22 @@ class Movie {
 }
 
 const _seed = <Movie>[
-  Movie(1, 'Midnight Orbit', 'Sci-Fi', 2023, 128, 8.4, 'A lone pilot discovers a signal beyond the edge of the solar system.', ['Ava Stone', 'Raj Mehta', 'Leo Park'], Color(0xFF141E30), Color(0xFF3A6073)),
-  Movie(2, 'Crimson Alley', 'Thriller', 2021, 112, 7.6, 'A detective races against time in a city that never sleeps.', ['Mia Cruz', 'Omar Haddad'], Color(0xFF93291E), Color(0xFFED213A)),
-  Movie(3, 'Laugh Track', 'Comedy', 2022, 98, 7.1, 'Three failing comedians get one last shot at a TV special.', ['Tom Reed', 'Nina Patel', 'Gus Lee'], Color(0xFFF7971E), Color(0xFFFFD200)),
-  Movie(4, 'Paper Kingdoms', 'Fantasy', 2020, 134, 8.0, 'A girl folds a map that rewrites a forgotten empire.', ['Iris Wong', 'Callum Fox'], Color(0xFF11998E), Color(0xFF38EF7D)),
-  Movie(5, 'Echoes of Rain', 'Drama', 2019, 121, 8.7, 'Two strangers share one monsoon and a lifetime of secrets.', ['Anaya Rao', 'Daniel Kim'], Color(0xFF4568DC), Color(0xFFB06AB3)),
-  Movie(6, 'Last Lap', 'Action', 2024, 109, 7.3, 'A retired racer is pulled back for one impossible race.', ['Jack Moreno', 'Sofia Lane'], Color(0xFF232526), Color(0xFF616567)),
-  Movie(7, 'Stardust Cafe', 'Comedy', 2018, 95, 6.9, 'A cosmic diner serves aliens, ghosts and one very tired chef.', ['Pia Novak', 'Eli Brooks'], Color(0xFFEE0979), Color(0xFFFF6A00)),
-  Movie(8, 'The Quiet Ward', 'Thriller', 2022, 105, 7.8, 'A night nurse notices patients who should not be there.', ['Hana Sato', 'Victor Hale'], Color(0xFF0F2027), Color(0xFF2C5364)),
-  Movie(9, 'Dune Runners', 'Action', 2023, 140, 7.5, 'Smugglers cross a burning desert with a stolen map.', ['Zane Cole', 'Lila Roy'], Color(0xFFDA4453), Color(0xFF89216B)),
-  Movie(10, 'Lantern Hill', 'Drama', 2017, 117, 8.2, 'A village lights one lantern a night for a son who never returned.', ['Mei Lin', 'Arjun Das'], Color(0xFF1D976C), Color(0xFF93F9B9)),
+  Movie(1, 'Inception', 'Sci-Fi', 2010, 148, 8.8, 'A thief who steals secrets from dreams is given a chance to plant an idea instead.', ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Elliot Page'], Color(0xFF141E30), Color(0xFF3A6073)),
+  Movie(2, 'The Dark Knight', 'Action', 2008, 152, 9.0, 'Batman faces the Joker, a criminal mastermind who pushes Gotham into chaos.', ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'], Color(0xFF232526), Color(0xFF616567)),
+  Movie(3, 'Interstellar', 'Sci-Fi', 2014, 169, 8.7, 'Explorers travel through a wormhole in search of a new home for humanity.', ['Matthew McConaughey', 'Anne Hathaway', 'Jessica Chastain'], Color(0xFF0F2027), Color(0xFF2C5364)),
+  Movie(4, 'The Shawshank Redemption', 'Drama', 1994, 142, 9.3, 'Two imprisoned men build a lasting friendship and find hope over many years.', ['Tim Robbins', 'Morgan Freeman'], Color(0xFF4B4B4B), Color(0xFFB59A6D)),
+  Movie(5, 'The Godfather', 'Drama', 1972, 175, 9.2, 'The ageing head of a crime family hands control to his reluctant youngest son.', ['Marlon Brando', 'Al Pacino', 'James Caan'], Color(0xFF200122), Color(0xFF6F0000)),
+  Movie(6, 'Avengers: Endgame', 'Action', 2019, 181, 8.4, 'The surviving heroes make a final stand to undo the damage of a cosmic disaster.', ['Robert Downey Jr.', 'Chris Evans', 'Scarlett Johansson'], Color(0xFF42275A), Color(0xFF734B6D)),
+  Movie(7, 'Titanic', 'Drama', 1997, 194, 7.9, 'A young couple from different worlds fall in love aboard the doomed ocean liner.', ['Leonardo DiCaprio', 'Kate Winslet'], Color(0xFF0575E6), Color(0xFF021B79)),
+  Movie(8, 'Jurassic Park', 'Adventure', 1993, 127, 8.2, 'A theme park of cloned dinosaurs turns into a fight for survival.', ['Sam Neill', 'Laura Dern', 'Jeff Goldblum'], Color(0xFF1D976C), Color(0xFF134E5E)),
+  Movie(9, 'The Lion King', 'Animation', 1994, 88, 8.5, 'A young lion prince flees his kingdom, then returns to claim his place.', ['Matthew Broderick', 'Jeremy Irons', 'James Earl Jones'], Color(0xFFF7971E), Color(0xFFDD2476)),
+  Movie(10, 'Toy Story', 'Animation', 1995, 81, 8.3, 'A cowboy doll and a space ranger toy must work together to find their way home.', ['Tom Hanks', 'Tim Allen'], Color(0xFF36D1DC), Color(0xFF5B86E5)),
+  Movie(11, 'The Matrix', 'Sci-Fi', 1999, 136, 8.7, 'A hacker learns that reality is a simulation and joins a rebellion against it.', ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss'], Color(0xFF000000), Color(0xFF0F9B0F)),
+  Movie(12, "Harry Potter and the Sorcerer's Stone", 'Fantasy', 2001, 152, 7.6, 'An orphan discovers he is a wizard and begins his first year at Hogwarts.', ['Daniel Radcliffe', 'Emma Watson', 'Rupert Grint'], Color(0xFF3A1C71), Color(0xFFD76D77)),
+  Movie(13, 'Parasite', 'Thriller', 2019, 132, 8.5, 'A poor family schemes its way into the lives of a wealthy household.', ['Song Kang-ho', 'Lee Sun-kyun', 'Cho Yeo-jeong'], Color(0xFF11998E), Color(0xFF38EF7D)),
+  Movie(14, '3 Idiots', 'Comedy', 2009, 170, 8.4, 'Three engineering students, and one free-thinking friend, challenge the pressure to succeed.', ['Aamir Khan', 'R. Madhavan', 'Sharman Joshi'], Color(0xFFFF512F), Color(0xFFF09819)),
+  Movie(15, 'RRR', 'Action', 2022, 187, 7.8, 'Two revolutionaries form an unlikely friendship while fighting colonial rule.', ['N. T. Rama Rao Jr.', 'Ram Charan', 'Alia Bhatt'], Color(0xFFB92B27), Color(0xFF1565C0)),
+  Movie(16, 'Dangal', 'Drama', 2016, 161, 8.3, 'A former wrestler trains his daughters to become world-class champions.', ['Aamir Khan', 'Fatima Sana Shaikh', 'Sanya Malhotra'], Color(0xFFDA4453), Color(0xFF89216B)),
 ];
 
 const _palettes = <List<Color>>[
@@ -591,7 +597,7 @@ class _AddMoviePageState extends State<AddMoviePage> {
 
   @override
   Widget build(BuildContext context) {
-    const genres = ['Drama', 'Action', 'Comedy', 'Sci-Fi', 'Thriller', 'Fantasy'];
+    const genres = ['Drama', 'Action', 'Comedy', 'Sci-Fi', 'Thriller', 'Fantasy', 'Adventure', 'Animation'];
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 560),
